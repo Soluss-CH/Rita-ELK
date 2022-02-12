@@ -1,6 +1,6 @@
 # Rita-ELK
 
-<p align="center"><img src="https://github.com/austin-taylor/vulnwhisperer/blob/master/docs/source/vuln_whisperer_logo_s.png" width="400px"></p>
+<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/main/Screenshot/Rita-Screen-General.png" width="400px"></p>
 
 Rita-ELK is an integration of RITA logs in Elastic Stack.
 
@@ -28,7 +28,7 @@ RITA works on the command line. We wanted to have an interface to visualize the 
 What are the features of this project?
 -------------
 
-- [X] [Hourly Zeek log analysis with Rita](https://github.com/Soluss-CH/Rita-ELK/blob/master/Rita/rita.con)
+- [X] [Hourly Zeek log analysis with Rita](https://github.com/Soluss-CH/Rita-ELK/blob/master/Rita/rita.cron)
 - [X] [Data ingestion with Logstash](https://github.com/Soluss-CH/Rita-ELK/blob/master/Logstash/)
 - [X] Rita Beacon logs parsing
 - [X] Rita Long connection logs parsing
@@ -42,19 +42,19 @@ What does it look like?
 -------------
 
 ### General dashboard
-<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/master/Screenshot/Rita-Screen-General.png" width="400px"></p>
+<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/main/Screenshot/Rita-Screen-General.png" width="400px"></p>
 
 
 ### Beacon dashboard
-<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/master/Screenshot/Rita-Screen-Beacon.png" width="400px"></p>
+<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/main/Screenshot/Rita-Screen-Beacon.png" width="400px"></p>
 
 
 ### DNS Tunnel dashboard
-<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/master/Screenshot/Rita-Screen-DNS.png" width="400px"></p>
+<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/main/Screenshot/Rita-Screen-DNS.png" width="400px"></p>
 
 
 ### Long connection dashboard
-<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/master/Screenshot/Rita-Screen-Long.png" width="400px"></p>
+<p align="center"><img src="https://github.com/Soluss-CH/Rita-ELK/blob/main/Screenshot/Rita-Screen-Long.png" width="400px"></p>
 
 
 
