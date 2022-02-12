@@ -12,11 +12,11 @@ What is RITA?
 
 RITA is an open source framework for network traffic analysis.
 The framework ingests Zeek Logs with the following major features:
-    Beaconing Detection: Search for signs of beaconing behavior in and out of your network
-    DNS Tunneling Detection Search for signs of DNS based covert channels
-    Blacklist Checking: Query blacklists to search for suspicious domains and hosts
+- Beaconing Detection: Search for signs of beaconing behavior in and out of your network.
+- DNS Tunneling Detection Search for signs of DNS based covert channels.
+- Blacklist Checking: Query blacklists to search for suspicious domains and hosts.
 
-More information on RITA: <a href="https://github.com/activecm/rita">RITA Github repository</a>
+More information on RITA: <a href="https://github.com/activecm/rita">RITA Github repository</a>.
 
 
 Why this project?
