@@ -73,4 +73,4 @@ Installation
 2) Import dashboard in Kibana: sudo curl -X POST https://user:password@hostname:5601/api/saved_objects/_import?createNewCopies=false -H "kbn-xsrf: true" --form file="@./Kibana/rita_dashboards.ndjson" -H 'kbn-xsrf: true' -k
 3) Copy the cron file to hourly parse zeek logs: sudo cp ./Rita/rita.cron /etc/cron.d/
 4) Copy Logstash configuration files cp ./Logstash/* /etc/logstash/conf.d/
-5) Edit 10-rita_filter.conf to setup your output accordigly to your Elasticsearch (username, password, hostname, certificate).
+5) Edit 10-rita_filter.conf to setup your output accordingly to your Elasticsearch (username, password, hostname, certificate).
