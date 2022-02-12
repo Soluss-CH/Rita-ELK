@@ -1,0 +1,200 @@
+{
+  "order" : 0,
+  "index_patterns" : [
+    "rita*"
+  ],
+  "settings" : { },
+  "mappings" : {
+    "properties" : {
+      "rita" : {
+        "properties" : {
+          "score" : {
+            "type" : "float"
+          },
+          "connections_count" : {
+            "type" : "long"
+          },
+          "dns" : {
+            "properties" : {
+              "subdomains_cardinality" : {
+                "type" : "long"
+              },
+              "domain_count" : {
+                "type" : "long"
+              }
+            }
+          },
+          "connection" : {
+            "properties" : {
+              "top_size" : {
+                "type" : "long"
+              },
+              "size_skew" : {
+                "type" : "long"
+              },
+              "size_dispersion" : {
+                "type" : "long"
+              },
+              "intvl_dispersion" : {
+                "type" : "long"
+              },
+              "top_size_count" : {
+                "type" : "long"
+              },
+              "top_intvl_count" : {
+                "type" : "long"
+              },
+              "intvl_range" : {
+                "type" : "long"
+              },
+              "avg_bytes" : {
+                "type" : "long"
+              },
+              "size_range" : {
+                "type" : "long"
+              },
+              "state" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "ignore_above" : 256,
+                    "type" : "keyword"
+                  }
+                }
+              },
+              "top_intvl" : {
+                "type" : "long"
+              },
+              "intvl_skew" : {
+                "type" : "long"
+              }
+            }
+          }
+        }
+      },
+      "@timestamp" : {
+        "type" : "date"
+      },
+      "@version" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "ignore_above" : 256,
+            "type" : "keyword"
+          }
+        }
+      },
+      "destination" : {
+        "properties" : {
+          "geo" : {
+            "properties" : {
+              "timezone" : {
+                "type" : "keyword"
+              },
+              "ip" : {
+                "type" : "ip"
+              },
+              "latitude" : {
+                "type" : "float"
+              },
+              "continent_code" : {
+                "type" : "keyword"
+              },
+              "city_name" : {
+                "type" : "keyword"
+              },
+              "country_code2" : {
+                "type" : "keyword"
+              },
+              "country_name" : {
+                "type" : "keyword"
+              },
+              "dma_code" : {
+                "type" : "long"
+              },
+              "country_code3" : {
+                "type" : "keyword"
+              },
+              "location" : {
+                "type" : "geo_point"
+              },
+              "region_name" : {
+                "type" : "keyword"
+              },
+              "postal_code" : {
+                "type" : "keyword"
+              },
+              "longitude" : {
+                "type" : "float"
+              },
+              "region_code" : {
+                "type" : "keyword"
+              }
+            }
+          },
+          "port" : {
+            "type" : "long"
+          },
+          "domain" : {
+            "type" : "keyword"
+          },
+          "ip" : {
+            "type" : "ip"
+          }
+        }
+      },
+      "fingerprint" : {
+        "type" : "keyword"
+      },
+      "source" : {
+        "properties" : {
+          "ip" : {
+            "type" : "ip"
+          }
+        }
+      },
+      "event" : {
+        "properties" : {
+          "duration" : {
+            "type" : "float"
+          },
+          "kind" : {
+            "type" : "keyword"
+          },
+          "module" : {
+            "type" : "keyword"
+          },
+          "category" : {
+            "type" : "keyword"
+          },
+          "type" : {
+            "type" : "keyword"
+          },
+          "dataset" : {
+            "type" : "keyword"
+          }
+        }
+      },
+      "command" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "ignore_above" : 256,
+            "type" : "keyword"
+          }
+        }
+      },
+      "network" : {
+        "properties" : {
+          "protocol" : {
+            "type" : "keyword"
+          },
+          "transport" : {
+            "type" : "keyword"
+          }
+        }
+      }
+    }
+  },
+  "aliases" : { }
+}
